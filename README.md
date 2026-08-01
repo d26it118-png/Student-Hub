@@ -85,6 +85,7 @@ This project is developed for educational purposes.
 ## 👨‍💻 Author
 
 **Jigar Kotecha**
+D26IT118 | IT Department | CSPIT - CHARUSAT UNIVERSITY
 
 GitHub: https://github.com/d26it118-png/
 
