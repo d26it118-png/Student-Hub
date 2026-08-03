@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Events</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <!-- Accessible Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header Banner -->
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="StudentHub Logo" class="logo-img">
+            </a>
+            <div class="logo">StudentHub</div>
+            <ul class="nav-links">
+                <li><a href="dashboard-student.html" class="active">Dashboard</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+    </nav>
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="Breadcrumb">
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Events</li>
+        </ol>
+    </nav>
+
+    <!-- Main Content Wrapped in Container -->
+    <main id="main-content" class="container" tabIndex="-1">
+        <h2>Upcoming Campus Events</h2>
+
+        <!-- Event Cards Grid -->
+        <div class="grid">
+
+            <article class="card event-card" aria-labelledby="event-1-title">
+                <h3 id="event-1-title">Annual Hackathon 2026</h3>
+                <div class="event-meta">
+                    <p><strong>Date:</strong> <time datetime="2026-09-10">September 10, 2026</time></p>
+                    <p><strong>Location:</strong> Main Computer Lab & Auditorium</p>
+                </div>
+                <p>Join us for 24 hours of non-stop coding, innovation, and networking.</p>
+                <a href="register.html" class="btn-primary" aria-label="Register for Annual Hackathon 2026">Register for
+                    Hackathon</a>
+            </article>
+
+            <article class="card event-card" aria-labelledby="event-2-title">
+                <h3 id="event-2-title">Web Accessibility Workshop</h3>
+                <div class="event-meta">
+                    <p><strong>Date:</strong> <time datetime="2026-09-18">September 18, 2026</time></p>
+                    <p><strong>Location:</strong> Seminar Hall B</p>
+                </div>
+                <p>Learn how to build inclusive web experiences following WCAG 2.1 guidelines.</p>
+                <a href="register.html" class="btn-primary"
+                    aria-label="Register for Web Accessibility Workshop">Register for Workshop</a>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <p>&copy; 2026 StudentHub Portal</p>
+    </footer>
+
+</body>
+
+</html>

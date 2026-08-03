@@ -11,7 +11,9 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">StudentHub</div>
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="StudentHub Logo" class="logo-img">
+            </a>
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="login.html">Login</a></li>
@@ -23,7 +25,7 @@
         <div class="card" style="max-width: 500px; margin: 2rem auto;">
             <h2>Create Account</h2>
             <br>
-            <form action="index.html">
+            <form id="registerForm">
                 <div class="form-group">
                     <label for="fullname">Full Name</label>
                     <input type="text" id="fullname" required placeholder="John Doe">
@@ -48,6 +50,19 @@
             </form>
         </div>
     </main>
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const role = document.getElementById("role").value;
+
+            if (role === "student") {
+                window.location.href = "dashboard-student.html";
+            } else {
+                window.location.href = "dashboard-faculty.html";
+            }
+        });
+    </script>
 </body>
 
 </html>
