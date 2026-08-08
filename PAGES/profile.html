@@ -1,50 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Settings - StudentHub</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
-
-<body>
-    <header>
-        <nav class="navbar">
-            <a href=../index.html" class="logo">
-                <img src="../images/logo.png" alt="StudentHub Logo" class="logo-img">
-            </a>
-            <ul class="nav-links">
-                <li><a href="dashboard-student.html">Dashboard</a></li>
-                <li><a href="profile.html" class="active">Profile</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container">
-        <div class="card" style="max-width: 600px; margin: auto;">
-            <h2>User Profile</h2>
-            <br>
-            <form>
-                <div class="form-group">
-                    <label>Full Name</label>
-                    <input type="text" value="Student Name" readonly style="background-color: #f1f5f9;">
-                </div>
-                <div class="form-group">
-                    <label>Email Address</label>
-                    <input type="email" value="student@studenthub.com" readonly style="background-color: #f1f5f9;">
-                </div>
-                <div class="form-group">
-                    <label for="newpass">Change Password</label>
-                    <input type="password" id="newpass" placeholder="Enter new password">
-                </div>
-                <button type="submit" class="btn-primary" style="border: none; cursor: pointer;">Save Changes</button>
-            </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StudentHub | Profile</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap/1%20Boostrap%20setup%20files/Source/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <div class="site-shell d-flex flex-column">
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center gap-2"
+            href="../index.html"
+            ><img src="../IMAGES/logo.png" alt="StudentHub logo" />StudentHub</a
+          ><a class="btn btn-outline-light btn-sm" href="dashboard-student.html"
+            >Dashboard</a
+          >
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2026 StudentHub Portal | Designed by Jigar Kotecha</p>
-    </footer>
-</body>
-
+      </nav>
+      <main class="container py-5 flex-grow-1">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <section class="card shadow-sm">
+              <div class="card-body p-4">
+                <h1 class="h2 page-heading">User Profile</h1>
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label" for="name">Full name</label
+                    ><input
+                      class="form-control"
+                      id="name"
+                      value="Student Name"
+                      readonly
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="profile-email"
+                      >Email address</label
+                    ><input
+                      class="form-control"
+                      type="email"
+                      id="profile-email"
+                      value="student@studenthub.com"
+                      readonly
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label" for="newpass"
+                      >Change password</label
+                    ><input class="form-control" type="password" id="newpass" />
+                  </div>
+                  <button class="btn btn-primary">Save changes</button>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

@@ -1,55 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Dashboard</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
-
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="../index.html" class="logo">
-                <img src="../images/logo.png" alt="StudentHub Logo" class="logo-img">
-            </a>
-            <div class="logo">StudentHub</div>
-            <ul class="nav-links">
-                <li><a href="dashboard-student.html" class="active">Dashboard</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="assignments.html">Assignments</a></li>
-                <li><a href="attendance.html">Attendance</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="event.html">Events</a></li>
-                <li><a href="contact.html">Contacts</a></li>
-                <li><a href="../index.html">Logout</a></li>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StudentHub | Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap/1%20Boostrap%20setup%20files/Source/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <div class="site-shell d-flex flex-column">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex gap-2 align-items-center"
+            href="../index.html"
+            ><img src="../IMAGES/logo.png" alt="StudentHub logo" />StudentHub</a
+          ><button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="dashboard-student.html"
+                  >Dashboard</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="courses.html">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="assignments.html">Assignments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="attendance.html">Attendance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="event.html">Events</a>
+              </li>
             </ul>
-        </nav>
-    </header>
-
-    <main class="container">
-        <h2>Welcome back, Student!</h2>
-        <br>
-        <div class="grid">
-            <div class="card">
-                <h3>Enrolled Courses</h3>
-                <p style="font-size: 2rem; font-weight: bold; margin-top: 0.5rem;">5</p>
-            </div>
-            <div class="card">
-                <h3>Pending Tasks</h3>
-                <p style="font-size: 2rem; font-weight: bold; margin-top: 0.5rem; color: #d97706;">2</p>
-            </div>
-            <div class="card">
-                <h3>Overall Attendance</h3>
-                <p style="font-size: 2rem; font-weight: bold; margin-top: 0.5rem; color: #16a34a;">88%</p>
-            </div>
+          </div>
         </div>
-</body>
-</main>
-<footer>
-    <p>&copy; 2026 StudentHub Portal | Designed by Jigar Kotecha</p>
-</footer>
-</body>
-
+      </nav>
+      <main class="container py-4 flex-grow-1">
+        <h1 class="h2 page-heading mb-4">Welcome back, Student!</h1>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <section class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h2 class="h6 text-muted">Enrolled courses</h2>
+                <p class="stat-value text-primary mb-0">5</p>
+              </div>
+            </section>
+          </div>
+          <div class="col-12 col-md-4">
+            <section class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h2 class="h6 text-muted">Pending tasks</h2>
+                <p class="stat-value text-warning mb-0">2</p>
+              </div>
+            </section>
+          </div>
+          <div class="col-12 col-md-4">
+            <section class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h2 class="h6 text-muted">Overall attendance</h2>
+                <p class="stat-value text-success mb-0">88%</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer class="bg-dark text-white-50 text-center py-3">
+        <small>&copy; 2026 StudentHub Portal</small>
+      </footer>
+    </div>
+    <script src="../bootstrap/1%20Boostrap%20setup%20files/Source/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

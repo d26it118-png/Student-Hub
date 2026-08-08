@@ -1,62 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudentHub - Academic Portal</title>
-    <link rel="stylesheet" href="CSS/index.css">
-</head>
-<body>
-    <header>
-        <a href="index.html" class="logo-container">
-            <img src="images/logo.png" alt="StudentHub Logo" class="logo-img">
-            <span class="logo-text">StudentHub Academic Portal</span>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="/PAGES/event.html">Events</a></li>
-                <li><a href="/PAGES/dashboard-student.html">Dashboard</a></li>
-                <li><a href="/PAGES/contact.html">Contact</a></li>
-                <li><a href="/PAGES/login.html">Login</a></li>
-                <li><a href="/PAGES/register.html">Register</a></li>
-            </ul>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StudentHub | Home</title>
+    <link rel="stylesheet" href="bootstrap/1%20Boostrap%20setup%20files/Source/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link btn btn-primary" href="#main-content">Skip to content</a>
+
+    <div class="site-shell d-flex flex-column">
+      <!-- Added semantic header around the existing navigation. -->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm" aria-label="Main navigation">
+          <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-semibold" href="index.html">
+              <img src="IMAGES/logo.png" alt="StudentHub logo" />
+              StudentHub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="PAGES/event.html">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="PAGES/dashboard-student.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="PAGES/contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="PAGES/login.html">Login</a></li>
+                <li class="nav-item"><a class="btn btn-primary ms-lg-2 mt-2 mt-lg-0" href="PAGES/register.html">Register</a></li>
+              </ul>
+            </div>
+          </div>
         </nav>
-    </header>
-    <main class="container">
-        <!-- Hero Section -->
-        <section class="hero">
-            <h1>Welcome to StudentHub</h1>
-            <p>Your central platform for campus events, academic resources, student notices, and dashboard updates.</p>
-        </section>
-        <section class="announcements">
-            <h2>Latest Campus Announcements</h2>
+      </header>
 
-            <article class="card">
-                <h3>Mid-Semester Exam Schedule Published</h3>
-                <p class="date">August 1, 2026</p>
-                <p>The mid-semester timetable is now available on the student dashboard.</p>
-            </article>
+      <main id="main-content" class="container py-4 py-md-5 flex-grow-1">
+        <!-- Added breadcrumb navigation for this index page. -->
+        <nav aria-label="Breadcrumb" class="mb-3">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+          </ol>
+        </nav>
 
-            <article class="card">
-                <h3>Annual Tech Fest Registration Open</h3>
-                <p class="date">July 28, 2026</p>
-                <p>Register for coding competitions and robotics workshops before August 15.</p>
-            </article>
+        <section class="hero text-white text-center rounded p-4 p-md-5 mb-4" aria-labelledby="welcome-heading">
+          <h1 id="welcome-heading" class="display-6">Welcome to StudentHub</h1>
+          <p class="mb-0">Student portal for events, courses and academic updates.</p>
         </section>
 
-        <!-- Quick Resources Section -->
-        <section class="quick-links">
-            <h2>Quick Resources</h2>
-            <ul>
-                <li><a href="contact.html">Submit Portal Feedback</a></li>
-                <li><a href="faq.html">Frequently Asked Questions</a></li>
-                <li><a href="dashboard.html">Update Profile Info</a></li>
-            </ul>
+        <section class="mb-4" aria-labelledby="announcements-heading">
+          <h2 id="announcements-heading" class="page-heading h3 mb-3">Latest Announcements</h2>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <article class="card h-100">
+                <div class="card-body">
+                  <h3 class="h5">Exam Schedule Published</h3>
+                  <p class="small text-muted"><time datetime="2026-08-01">August 1, 2026</time></p>
+                  <p class="mb-0">The timetable is available on the student dashboard.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="card h-100">
+                <div class="card-body">
+                  <h3 class="h5">Tech Fest Registration Open</h3>
+                  <p class="small text-muted"><time datetime="2026-07-28">July 28, 2026</time></p>
+                  <p class="mb-0">Register before August 15.</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 StudentHub Portal | Designed for Accessibility &amp; Semantics.</p>
-    </footer>
-</body>
+
+        <section aria-labelledby="resources-heading">
+          <h2 id="resources-heading" class="page-heading h3 mb-3">Quick resources</h2>
+          <div class="list-group">
+            <a class="list-group-item list-group-item-action" href="PAGES/contact.html">Submit portal feedback</a>
+            <a class="list-group-item list-group-item-action" href="PAGES/dashboard-student.html">Update profile information</a>
+            <a class="list-group-item list-group-item-action" href="PAGES/courses.html">View enrolled courses</a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Added aside for related support information. -->
+      <aside class="container pb-4" aria-labelledby="help-heading">
+        <h2 id="help-heading" class="h4">Need help?</h2>
+        <p class="mb-0">Visit the <a href="PAGES/contact.html">Contact page</a> for StudentHub support.</p>
+      </aside>
+
+      <footer class="bg-dark text-white-50 text-center py-3">
+        <small>&copy; 2026 StudentHub Portal</small>
+      </footer>
+    </div>
+    <script src="bootstrap/1%20Boostrap%20setup%20files/Source/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

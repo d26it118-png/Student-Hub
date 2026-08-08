@@ -1,68 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudentHub - Register</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
-
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="../index.html" class="logo">
-                <img src="../images/logo.png" alt="StudentHub Logo" class="logo-img">
-            </a>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container">
-        <div class="card" style="max-width: 500px; margin: 2rem auto;">
-            <h2>Create Account</h2>
-            <br>
-            <form id="registerForm">
-                <div class="form-group">
-                    <label for="fullname">Full Name</label>
-                    <input type="text" id="fullname" required placeholder="John Doe">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" required placeholder="john@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="role">Register As</label>
-                    <select id="role">
-                        <option value="student">Student</option>
-                        <option value="faculty">Faculty</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" required>
-                </div>
-                <button type="submit" class="btn-primary"
-                    style="width: 100%; border: none; cursor: pointer;">Register</button>
-            </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StudentHub | Register</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap/1%20Boostrap%20setup%20files/Source/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <div class="site-shell d-flex flex-column">
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center gap-2 fw-semibold"
+            href="../index.html"
+            ><img src="../IMAGES/logo.png" alt="StudentHub logo" />StudentHub</a
+          ><a class="btn btn-outline-light btn-sm" href="login.html">Login</a>
         </div>
-    </main>
+      </nav>
+      <main class="container flex-grow-1 py-5">
+        <div class="row justify-content-center">
+          <div class="col-sm-10 col-md-8 col-lg-6">
+            <section class="card shadow-sm">
+              <div class="card-body p-4 p-md-5">
+                <h1 class="h2 page-heading">Create account</h1>
+                <p class="text-muted">Join the StudentHub portal.</p>
+                <form id="registerForm">
+                  <div class="mb-3">
+                    <label class="form-label" for="fullname">Full name</label
+                    ><input
+                      class="form-control"
+                      type="text"
+                      id="fullname"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="email">Email address</label
+                    ><input
+                      class="form-control"
+                      type="email"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="role">Register as</label
+                    ><select class="form-select" id="role">
+                      <option value="student">Student</option>
+                      <option value="faculty">Faculty</option>
+                    </select>
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label" for="password">Password</label
+                    ><input
+                      class="form-control"
+                      type="password"
+                      id="password"
+                      required
+                    />
+                  </div>
+                  <button class="btn btn-primary w-100" type="submit">
+                    Register
+                  </button>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
     <script>
-        document.getElementById("registerForm").addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            const role = document.getElementById("role").value;
-
-            if (role === "student") {
-                window.location.href = "dashboard-student.html";
-            } else {
-                window.location.href = "dashboard-faculty.html";
-            }
+      document
+        .getElementById("registerForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          window.location.href =
+            document.getElementById("role").value === "student"
+              ? "dashboard-student.html"
+              : "dashboard-faculty.html";
         });
     </script>
-</body>
-
+  </body>
 </html>

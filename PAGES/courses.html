@@ -1,52 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses - StudentHub</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
-
-<body>
-    <header>
-       <nav class="navbar">
-            <a href="../index.html" class="logo">
-                <img src="../images/logo.png" alt="StudentHub Logo" class="logo-img">
-            </a>
-            <div class="logo">StudentHub</div>
-            <ul class="nav-links">
-                <li><a href="dashboard-student.html" class="active">Dashboard</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="assignments.html">Assignments</a></li>
-                <li><a href="attendance.html">Attendance</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="event.html">Events</a></li>
-                <li><a href="contact.html">Contacts</a></li>
-                <li><a href="../index.html">Logout</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container">
-        <h2>Enrolled Courses</h2>
-        <br>
-        <div class="grid">
-            <div class="card">
-                <h3>Web Development Freamwork</h3>
-                <p>Code: ITUE203</p>
-                <p>Instructor: Prof. Ravi patel</p>
-            </div>
-            <div class="card">
-                <h3>FUNDAMENTALS OF DATA STRUCTURE AND ALGORITHMS</h3>
-                <p>Code: CSUC201</p>
-                <p>Instructor: prof. Hardik Parmar</p>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StudentHub | Courses</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap/1%20Boostrap%20setup%20files/Source/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <div class="site-shell d-flex flex-column">
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center gap-2"
+            href="../index.html"
+            ><img src="../IMAGES/logo.png" alt="StudentHub logo" />StudentHub</a
+          ><a class="btn btn-outline-light btn-sm" href="dashboard-student.html"
+            >Dashboard</a
+          >
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2026 StudentHub Portal | Designed by Jigar Kotecha</p>
-    </footer>
-</body>
-
+      </nav>
+      <main class="container py-4 flex-grow-1">
+        <h1 class="h2 page-heading mb-4">Enrolled Courses</h1>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <article class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h2 class="h4">Web Development Framework</h2>
+                <p class="mb-1">Code: ITUE203</p>
+                <p class="mb-0 text-muted">Instructor: Prof. Ravi Patel</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h2 class="h4">Data Structures &amp; Algorithms</h2>
+                <p class="mb-1">Code: CSUC201</p>
+                <p class="mb-0 text-muted">Instructor: Prof. Hardik Parmar</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

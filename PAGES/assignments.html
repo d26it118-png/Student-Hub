@@ -1,54 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignments - StudentHub</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
-
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="../index.html" class="logo">
-                <img src="../images/logo.png" alt="StudentHub Logo" class="logo-img">
-            </a>
-            <ul class="nav-links">
-                <li><a href="dashboard-student.html">Dashboard</a></li>
-                <li><a href="assignments.html" class="active">Assignments</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container">
-        <div class="card">
-            <h2>Assignments Hub</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Title</th>
-                        <th>Subject</th>
-                        <th>Due Date</th>
-                        <th>Status</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Practical 1: Project Initiation</td>
-                        <td>Web Developmen Freamworkst</td>
-                        <td>2026-08-05</td>
-                        <td><span class="badge badge-warning">Pending</span></td>
-                        <td><button class="btn-primary">Submit File</button></td>
-                    </tr>
-                </tbody>
-            </table>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StudentHub | Assignments</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap/1%20Boostrap%20setup%20files/Source/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <div class="site-shell d-flex flex-column">
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center gap-2"
+            href="../index.html"
+            ><img src="../IMAGES/logo.png" alt="StudentHub logo" />StudentHub</a
+          ><a class="btn btn-outline-light btn-sm" href="dashboard-student.html"
+            >Dashboard</a
+          >
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2026 StudentHub Portal | Designed by Jigar Kotecha</p>
-    </footer>
-</body>
-
+      </nav>
+      <main class="container py-4 flex-grow-1">
+        <h1 class="h2 page-heading mb-4">Assignments Hub</h1>
+        <div class="card shadow-sm">
+          <div class="table-responsive">
+            <table class="table table-hover mb-0">
+              <thead class="table-light">
+                <tr>
+                  <th>Title</th>
+                  <th>Subject</th>
+                  <th>Due date</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Practical 3: Responsive UI</td>
+                  <td>Web Development Framework</td>
+                  <td>2026-08-15</td>
+                  <td><span class="badge text-bg-warning">Pending</span></td>
+                  <td>
+                    <button class="btn btn-sm btn-primary">Submit file</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

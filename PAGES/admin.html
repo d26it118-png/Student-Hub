@@ -1,56 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - StudentHub</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
-
-<body>
-    <header>
-        <nav class="navbar">
-        <a href="../index.html" class="logo">
-            <img src="../images/logo.png" alt="StudentHub Logo" class="logo-img">
-        </a>
-        <div class="logo">StudentHub[Admin Panel]</div>
-            <ul class="nav-links">
-                <li><a href="admin.html" class="active">Overview</a></li>
-                <li><a href="../index.html">Logout</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container">
-        <div class="card">
-            <h2>System Users Management</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>User ID</th>
-                        <th>Name</th>
-                        <th>Role</th>
-                        <th>Status</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>USR-101</td>
-                        <td>John Doe</td>
-                        <td>Faculty</td>
-                        <td><span class="badge badge-success">Active</span></td>
-                        <td><button class="btn-primary" style="background-color: #dc2626; border: none;">Revoke</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StudentHub | Admin</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap/1%20Boostrap%20setup%20files/Source/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <div class="site-shell d-flex flex-column">
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center gap-2"
+            href="../index.html"
+            ><img src="../IMAGES/logo.png" alt="StudentHub logo" />StudentHub
+            Admin</a
+          ><a class="btn btn-outline-light btn-sm" href="../index.html"
+            >Logout</a
+          >
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2026 StudentHub Portal | Designed by Jigar Kotecha</p>
-    </footer>
-</body>
-
+      </nav>
+      <main class="container py-4 flex-grow-1">
+        <h1 class="h2 page-heading mb-4">System Users Management</h1>
+        <div class="card shadow-sm">
+          <div class="table-responsive">
+            <table class="table table-hover mb-0">
+              <thead class="table-light">
+                <tr>
+                  <th>User ID</th>
+                  <th>Name</th>
+                  <th>Role</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>USR-101</td>
+                  <td>John Doe</td>
+                  <td>Faculty</td>
+                  <td><span class="badge text-bg-success">Active</span></td>
+                  <td><button class="btn btn-sm btn-danger">Revoke</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
