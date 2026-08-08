@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Student Dashboard</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="StudentHub Logo" class="logo-img">
+            </a>
+            <div class="logo">StudentHub</div>
+            <ul class="nav-links">
+                <li><a href="dashboard-student.html" class="active">Dashboard</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav aria-label="Breadcrumb">
+        <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li aria-current="page">Dashboard</li>
+        </ol>
+    </nav>
+
+    <main id="main-content" tabIndex="-1">
+        <h2>Student Dashboard</h2>
+
+        <!-- Academic Overview Section -->
+        <section aria-labelledby="academic-summary">
+            <h3 id="academic-summary">Academic Overview</h3>
+            <ul>
+                <li><strong>Current Semester:</strong> 4th Semester</li>
+                <li><strong>Program:</strong> Diploma in Computer Engineering</li>
+                <li><strong>Attendance:</strong> 88%</li>
+            </ul>
+        </section>
+
+        <!-- Course Schedule Table with accessible headers -->
+        <section aria-labelledby="schedule-heading">
+            <h3 id="schedule-heading">Enrolled Courses & Timetable</h3>
+            <table border="1">
+                <caption>Weekly Class Schedule for Current Term</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Course Code</th>
+                        <th scope="col">Subject Title</th>
+                        <th scope="col">Schedule</th>
+                        <th scope="col">Instructor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>WDF-401</td>
+                        <td>Web Development Frameworks</td>
+                        <td>Mon, Wed 10:00 AM</td>
+                        <td>Prof. Sharma</td>
+                    </tr>
+                    <tr>
+                        <td>SE-402</td>
+                        <td>Software Engineering</td>
+                        <td>Tue, Thu 11:30 AM</td>
+                        <td>Prof. Patel</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2026 StudentHub Portal</p>
+    </footer>
+
+</body>
+
+</html>
