@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub - Register</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <main>
+        <h1>Create Student Account</h1>
+
+        <form action="login.html" method="get">
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="studentid">Student ID:</label><br>
+            <input type="text" id="studentid" name="studentid" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="course">Course:</label><br>
+            <select id="course" name="course" required>
+                <option value="">Select Course</option>
+                <option value="bca">BCA</option>
+                <option value="bba">BBA</option>
+                <option value="bcom">B.Com</option>
+                <option value="bsc">B.Sc</option>
+                <option value="ba">B.A.</option>
+            </select>
+
+            <br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="confirm-password">Confirm Password:</label><br>
+            <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+
+            <label>
+                <input type="checkbox" required>
+                I agree to the terms and conditions
+            </label>
+
+            <br><br>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+        <footer>
+            <p>&copy; 2026 Student-Hub. Helping students stay connected.</p>
+        </footer>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
