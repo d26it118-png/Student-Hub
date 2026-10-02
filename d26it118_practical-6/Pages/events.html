@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Hub - Events</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="students.html">Students</a>
+        <a href="profile.html">Profile</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <h1>Upcoming Events</h1>
+
+        <p class="intro-text">
+            Events are fetched from events.json and rendered dynamically.
+        </p>
+
+        <!-- Search, Filter and Sort Controls -->
+        <div class="data-controls">
+
+            <!-- Search -->
+            <input id="eventSearch" type="search" placeholder="Search events...">
+
+            <!-- Category Filter -->
+            <select id="eventCategory">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+                <option value="Technical">
+                    Technical
+                </option>
+
+                <option value="Workshop">
+                    Workshop
+                </option>
+
+                <option value="Competition">
+                    Competition
+                </option>
+
+                <option value="Seminar">
+                    Seminar
+                </option>
+
+            </select>
+
+            <!-- Sorting -->
+            <select id="eventSort">
+
+                <option value="default">
+                    Sort By
+                </option>
+
+                <option value="az">
+                    Name A-Z
+                </option>
+
+                <option value="za">
+                    Name Z-A
+                </option>
+
+                <option value="date">
+                    Date
+                </option>
+
+            </select>
+
+        </div>
+
+        <!-- Event Container -->
+        <div id="eventContainer" class="data-grid" aria-live="polite">
+            Loading events...
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+
+            <button id="eventPrev" type="button">
+                ← Previous
+            </button>
+
+            <span id="eventPageInfo">
+                Page 1
+            </span>
+
+            <button id="eventNext" type="button">
+                Next →
+            </button>
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                &copy; 2026 Student-Hub.
+                Helping students stay connected.
+            </p>
+        </footer>
+
+    </main>
+
+    <!-- JavaScript Module -->
+    <script type="module" src="../js/events.js"></script>
+
+</body>
+
+</html>

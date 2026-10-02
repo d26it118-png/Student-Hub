@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "question": "How do I login?",
+    "answer": "Open the Login page and enter your registered email and password."
+  },
+  {
+    "id": 2,
+    "question": "How can I register as a student?",
+    "answer": "Open the Register page, fill all required fields, and submit the validated form."
+  },
+  {
+    "id": 3,
+    "question": "Where can I see upcoming events?",
+    "answer": "Open the Events page to search, filter, sort, and browse events."
+  },
+  {
+    "id": 4,
+    "question": "How is event data loaded?",
+    "answer": "The Events page fetches event records from an external JSON file using the Fetch API."
+  },
+  {
+    "id": 5,
+    "question": "Can I search for a specific event?",
+    "answer": "Yes. Use the search box to find events by title, category, venue, or organizer."
+  },
+  {
+    "id": 6,
+    "question": "Can I filter events by category?",
+    "answer": "Yes. Select Technical, Workshop, Competition, or Seminar from the category filter."
+  },
+  {
+    "id": 7,
+    "question": "Can I sort the event list?",
+    "answer": "Yes. Events can be sorted by title A-Z, title Z-A, or date."
+  },
+  {
+    "id": 8,
+    "question": "How does pagination work?",
+    "answer": "The page displays a fixed number of records and Previous/Next buttons move between pages."
+  },
+  {
+    "id": 9,
+    "question": "Where can I view student profiles?",
+    "answer": "Open the Students page to view student records loaded from students.json."
+  },
+  {
+    "id": 10,
+    "question": "Can I search students?",
+    "answer": "Yes. Search by student name, ID, course, or city."
+  },
+  {
+    "id": 11,
+    "question": "Where are FAQs stored?",
+    "answer": "FAQ records are stored in data/faqs.json and rendered dynamically on the FAQ page."
+  },
+  {
+    "id": 12,
+    "question": "What happens if JSON loading fails?",
+    "answer": "A user-friendly error message is displayed instead of leaving the page blank."
+  },
+  {
+    "id": 13,
+    "question": "Does the page show a loading state?",
+    "answer": "Yes. A loading message is shown while the Fetch API request is in progress."
+  },
+  {
+    "id": 14,
+    "question": "Which JavaScript array methods are used?",
+    "answer": "The implementation uses filter, sort, map, slice, and forEach for data processing and rendering."
+  },
+  {
+    "id": 15,
+    "question": "Can the same data loader be reused?",
+    "answer": "Yes. The reusable fetchJSON module loads JSON data and handles HTTP and parsing errors."
+  }
+]

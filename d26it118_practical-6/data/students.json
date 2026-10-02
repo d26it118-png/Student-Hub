@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ST101",
+    "name": "Aarav Shah",
+    "course": "B.Tech IT",
+    "year": 3,
+    "email": "aarav.shah@example.com",
+    "city": "Vadodara"
+  },
+  {
+    "id": "ST102",
+    "name": "Diya Patel",
+    "course": "B.Tech IT",
+    "year": 2,
+    "email": "diya.patel@example.com",
+    "city": "Ahmedabad"
+  },
+  {
+    "id": "ST103",
+    "name": "Rohan Mehta",
+    "course": "B.Tech CSE",
+    "year": 3,
+    "email": "rohan.mehta@example.com",
+    "city": "Surat"
+  },
+  {
+    "id": "ST104",
+    "name": "Kavya Desai",
+    "course": "B.Tech IT",
+    "year": 1,
+    "email": "kavya.desai@example.com",
+    "city": "Anand"
+  },
+  {
+    "id": "ST105",
+    "name": "Harsh Trivedi",
+    "course": "B.Tech CSE",
+    "year": 4,
+    "email": "harsh.trivedi@example.com",
+    "city": "Vadodara"
+  },
+  {
+    "id": "ST106",
+    "name": "Meera Joshi",
+    "course": "B.Tech IT",
+    "year": 2,
+    "email": "meera.joshi@example.com",
+    "city": "Rajkot"
+  },
+  {
+    "id": "ST107",
+    "name": "Dev Patel",
+    "course": "B.Tech IT",
+    "year": 3,
+    "email": "dev.patel@example.com",
+    "city": "Nadiad"
+  },
+  {
+    "id": "ST108",
+    "name": "Isha Shah",
+    "course": "B.Tech CSE",
+    "year": 1,
+    "email": "isha.shah@example.com",
+    "city": "Vadodara"
+  },
+  {
+    "id": "ST109",
+    "name": "Yash Parmar",
+    "course": "B.Tech IT",
+    "year": 4,
+    "email": "yash.parmar@example.com",
+    "city": "Ahmedabad"
+  },
+  {
+    "id": "ST110",
+    "name": "Mahi Vora",
+    "course": "B.Tech CSE",
+    "year": 2,
+    "email": "mahi.vora@example.com",
+    "city": "Surat"
+  },
+  {
+    "id": "ST111",
+    "name": "Neel Bhatt",
+    "course": "B.Tech IT",
+    "year": 3,
+    "email": "neel.bhatt@example.com",
+    "city": "Bharuch"
+  },
+  {
+    "id": "ST112",
+    "name": "Riya Patel",
+    "course": "B.Tech CSE",
+    "year": 4,
+    "email": "riya.patel@example.com",
+    "city": "Anand"
+  },
+  {
+    "id": "ST113",
+    "name": "Krish Shah",
+    "course": "B.Tech IT",
+    "year": 1,
+    "email": "krish.shah@example.com",
+    "city": "Rajkot"
+  },
+  {
+    "id": "ST114",
+    "name": "Pooja Desai",
+    "course": "B.Tech CSE",
+    "year": 2,
+    "email": "pooja.desai@example.com",
+    "city": "Vadodara"
+  },
+  {
+    "id": "ST115",
+    "name": "Vivaan Mehta",
+    "course": "B.Tech IT",
+    "year": 4,
+    "email": "vivaan.mehta@example.com",
+    "city": "Ahmedabad"
+  }
+]
