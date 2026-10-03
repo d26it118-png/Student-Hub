@@ -1,4 +1,4 @@
-# StudentHub - D26IT11 Practical 8
+# StudentHub - D26IT118 Practical 8
 
 ## Practical Title
 **MySQL Schema Design, ER Model, MySQLi Connectivity, and Prepared Statements**
