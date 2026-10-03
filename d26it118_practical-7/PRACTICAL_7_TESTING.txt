@@ -1,0 +1,27 @@
+Practical 7 - Quick Test
+=========================
+
+Run:
+http://localhost/d26it118_practical_7/Pages/register.php
+
+Valid sample:
+Name: Jigar Kotecha
+Email: jigar@example.com
+Student ID: 26IT118
+Mobile: 9876543210
+Course: B.Tech
+Year: Third Year
+Gender: Male
+Password: Jigar@123
+Confirm Password: Jigar@123
+Terms: checked
+
+Expected:
+Registration successful and data appended to data/students.csv.
+
+Invalid tests:
+1. Email: abc@ -> email error
+2. Mobile: 12345 -> mobile error
+3. Password: abc123 -> password error
+4. Different confirm password -> mismatch error
+5. Terms unchecked -> terms error
