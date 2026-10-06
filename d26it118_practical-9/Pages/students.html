@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Hub - Students</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="dashboard.html">Dashboard</a> |
+        <a href="assignment.html">Assignments</a> |
+        <a href="attendance.html">Attendance</a> |
+        <a href="students.php">Students</a> |
+        <a href="events.php">Events</a> |
+        <a href="profile.html">Profile</a> |
+        <a href="faq.html">FAQ</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+    <!-- Main Content -->
+    <main>
+
+        <h1>Student Profiles</h1>
+
+        <p class="intro-text">
+            Student records are loaded dynamically from students.json
+            using the Fetch API.
+        </p>
+
+        <!-- Search, Filter and Sort Controls -->
+        <div class="data-controls">
+
+            <!-- Search -->
+            <input id="studentSearch" type="search" placeholder="Search by name, ID, course or city">
+
+            <!-- Year Filter -->
+            <select id="studentYear">
+
+                <option value="all">
+                    All Years
+                </option>
+
+                <option value="1">
+                    Year 1
+                </option>
+
+                <option value="2">
+                    Year 2
+                </option>
+
+                <option value="3">
+                    Year 3
+                </option>
+
+                <option value="4">
+                    Year 4
+                </option>
+
+            </select>
+
+            <!-- Sorting -->
+            <select id="studentSort">
+
+                <option value="default">
+                    Sort By
+                </option>
+
+                <option value="az">
+                    Name A-Z
+                </option>
+
+                <option value="za">
+                    Name Z-A
+                </option>
+
+                <option value="year">
+                    Year
+                </option>
+
+            </select>
+
+        </div>
+
+        <!-- Student Container -->
+        <div id="studentContainer" class="data-grid" aria-live="polite">
+            Loading students...
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+
+            <button id="studentPrev" type="button">
+                ← Previous
+            </button>
+
+            <span id="studentPageInfo">
+                Page 1
+            </span>
+
+            <button id="studentNext" type="button">
+                Next →
+            </button>
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                &copy; 2026 Student-Hub.
+                Helping students stay connected.
+            </p>
+        </footer>
+
+    </main>
+
+    <!-- JavaScript Module -->
+    <script type="module" src="../js/students.js"></script>
+
+</body>
+
+</html>
