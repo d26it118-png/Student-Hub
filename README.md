@@ -1,6 +1,6 @@
 # StudentHub
 
-StudentHub is a student portal developed as a series of Web Development Frameworks practicals. This repository contains **Practicals 1-10** for D26IT118 at CHARUSAT.
+StudentHub is a student portal developed as a series of Web Development Frameworks practicals. This repository contains **Practicals 1-11** for D26IT118 at CHARUSAT.
 
 The practicals build the portal step by step, from project planning and accessible web pages to database-backed student features and secure authentication.
 
@@ -13,6 +13,7 @@ The practicals build the portal step by step, from project planning and accessib
 - Uses a MySQL database for student, event, and registration data, with schema documentation and prepared database queries.
 - Supports account registration with duplicate-email checks and hashed passwords.
 - Provides login and logout, student and admin dashboards, role checks, session timeout, and an optional remember-me token.
+- Adds admin-only student management with search, filters, pagination, and CRUD operations.
 
 ## Practical Index
 
@@ -28,8 +29,10 @@ The practicals build the portal step by step, from project planning and accessib
 | 8 | MySQL schema design, ER model, database connectivity, and prepared statements | [d26it118_practical-8](./d26it118_practical-8/) |
 | 9 | Secure account registration, duplicate-email checks, and password hashing | [d26it118_practical-9](./d26it118_practical-9/) |
 | 10 | Secure login/logout, sessions, role-based access, timeout, and remember-me | [d26it118_practical-10](./d26it118_practical-10/) |
+| 11 | Admin student management with MySQLi CRUD, search, filters, and pagination | [d26it118_practical-11](./d26it118_practical-11/) |
 
 For setup instructions and test cases for Practical 10, see [its README](./d26it118_practical-10/README.md).
+For Practical 11, see [its README](./d26it118_practical-11/README_PRACTICAL11.md).
 
 ## Technologies
 
