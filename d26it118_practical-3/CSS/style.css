@@ -1,0 +1,45 @@
+/* Practical 3: basic shared styling. Bootstrap handles layout and responsiveness. */
+body {
+  min-height: 100vh;
+  background: #f2f2f2;
+  color: #222;
+}
+.site-shell {
+  min-height: 100vh;
+}
+.navbar-brand img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+.page-heading {
+  color: #000;
+}
+.hero {
+  background: #000;
+}
+.stat-value {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+.btn-primary {
+  background: #000;
+  border-color: #000;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #333;
+  border-color: #333;
+}
+.text-primary {
+  color: #000 !important;
+}
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 12px;
+  z-index: 1050;
+}
+.skip-link:focus {
+  top: 12px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Hub - Home</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <header class="home-header">
+            <img src="./images/logo.png" height="100" class="logo" alt="Logo">
+            <div>
+                <span>Student-Hub</span>
+                <p class="intro-text">A polished student portal for assignments, attendance, events, and profile management.</p>
+            </div>
+        </header>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="Pages/dashboard.html">Dashboard</a>
+            <a href="Pages/assignment.html">Assignments</a>
+            <a href="Pages/attendance.html">Attendance</a>
+            <a href="Pages/events.html">Events</a>
+            <a href="Pages/profile.html">Profile</a>
+            <a href="Pages/faq.html">FAQ</a>
+            <a href="Pages/contact.html">Contact</a>
+            <a href="Pages/login.html">Login</a>
+        </nav>
+
+        <section class="hero-card">
+            <h2 id="welcome-heading">Welcome to Campus Connect</h2>
+            <p>Access assignments, attendance, events, profile information and more.</p>
+            <ul>
+                <li>View your assignments</li>
+                <li>Check attendance</li>
+                <li>Explore upcoming events</li>
+                <li>Manage your student profile</li>
+                <li>Get answers to frequently asked questions</li>
+            </ul>
+        </section>
+
+        <div class="home-actions" aria-label="Quick actions">
+            <button type="button" id="change-heading-btn">Change Heading</button>
+            <button type="button" id="dark-mode-btn">Dark Mode</button>
+            <button type="button" id="announcement-btn" aria-expanded="false">Open Announcements</button>
+        </div>
+
+        <section class="feature-grid" aria-label="Home features">
+            <article class="feature-card">
+                <h3>Fast Access</h3>
+                <p>Quickly navigate to assignments, attendance, and campus events from one dashboard.</p>
+            </article>
+            <article class="feature-card">
+                <h3>Clean Design</h3>
+                <p>Enjoy a fresh layout with soft cards, balanced spacing, and friendly interface elements.</p>
+            </article>
+            <article class="feature-card">
+                <h3>Student Focused</h3>
+                <p>Designed for easy reading and quick action on important student tasks and announcements.</p>
+            </article>
+        </section>
+
+        <section id="announcements" class="announcements" hidden>
+            <h2>Latest Announcements</h2>
+            <ul>
+                <li>Technical Workshop registrations are now open.</li>
+                <li>Annual Sports Day will be held on September 15, 2026.</li>
+                <li>Submit your assignments before the listed due dates.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Student-Hub. Helping students stay connected.</p>
+        </footer>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
