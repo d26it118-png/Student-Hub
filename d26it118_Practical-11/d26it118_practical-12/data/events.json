@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "AI Innovation Workshop",
+    "category": "Workshop",
+    "date": "2026-10-08",
+    "venue": "CSPIT Computer Lab",
+    "organizer": "IT Department"
+  },
+  {
+    "id": 2,
+    "title": "Web Development Bootcamp",
+    "category": "Technical",
+    "date": "2026-10-12",
+    "venue": "Seminar Hall A",
+    "organizer": "WDF Club"
+  },
+  {
+    "id": 3,
+    "title": "CodeSprint Challenge",
+    "category": "Competition",
+    "date": "2026-10-15",
+    "venue": "Innovation Center",
+    "organizer": "Coding Club"
+  },
+  {
+    "id": 4,
+    "title": "Cloud Computing Seminar",
+    "category": "Seminar",
+    "date": "2026-10-19",
+    "venue": "Auditorium",
+    "organizer": "Cloud Club"
+  },
+  {
+    "id": 5,
+    "title": "Cyber Security Workshop",
+    "category": "Workshop",
+    "date": "2026-10-22",
+    "venue": "Computer Lab 2",
+    "organizer": "Cyber Club"
+  },
+  {
+    "id": 6,
+    "title": "Hackathon 2026",
+    "category": "Competition",
+    "date": "2026-10-25",
+    "venue": "Innovation Center",
+    "organizer": "CDPC"
+  },
+  {
+    "id": 7,
+    "title": "Java Programming Seminar",
+    "category": "Seminar",
+    "date": "2026-10-28",
+    "venue": "Seminar Hall B",
+    "organizer": "Java Club"
+  },
+  {
+    "id": 8,
+    "title": "UI UX Design Workshop",
+    "category": "Workshop",
+    "date": "2026-11-02",
+    "venue": "Design Studio",
+    "organizer": "Design Club"
+  },
+  {
+    "id": 9,
+    "title": "Data Structures Contest",
+    "category": "Competition",
+    "date": "2026-11-05",
+    "venue": "Computer Lab 1",
+    "organizer": "DSA Club"
+  },
+  {
+    "id": 10,
+    "title": "AI and Machine Learning Seminar",
+    "category": "Seminar",
+    "date": "2026-11-09",
+    "venue": "Auditorium",
+    "organizer": "AI Club"
+  },
+  {
+    "id": 11,
+    "title": "Git and GitHub Workshop",
+    "category": "Workshop",
+    "date": "2026-11-12",
+    "venue": "Seminar Hall A",
+    "organizer": "Open Source Club"
+  },
+  {
+    "id": 12,
+    "title": "App Development Challenge",
+    "category": "Competition",
+    "date": "2026-11-16",
+    "venue": "Innovation Center",
+    "organizer": "Mobile Club"
+  },
+  {
+    "id": 13,
+    "title": "Database Systems Seminar",
+    "category": "Seminar",
+    "date": "2026-11-19",
+    "venue": "Seminar Hall B",
+    "organizer": "DBMS Club"
+  },
+  {
+    "id": 14,
+    "title": "Python Automation Workshop",
+    "category": "Workshop",
+    "date": "2026-11-23",
+    "venue": "Computer Lab 3",
+    "organizer": "Python Club"
+  },
+  {
+    "id": 15,
+    "title": "Tech Quiz Championship",
+    "category": "Competition",
+    "date": "2026-11-27",
+    "venue": "Auditorium",
+    "organizer": "Technical Club"
+  }
+]
