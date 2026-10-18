@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Hub - Secure Registration</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body data-theme-toggle="disabled">
+
+<main>
+    <header class="home-header">
+        <img src="../images/logo.png" height="100" class="logo" alt="Student-Hub Logo">
+        <div>
+            <span>Student-Hub</span>
+            <p class="intro-text">Secure account creation with frontend and backend validation.</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="assignment.html">Assignments</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Profile</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <section class="hero-card">
+        <h2>Secure User Registration</h2>
+        <p class="form-intro">
+            Create your Student-Hub account. Your password is securely hashed before it is stored.
+        </p>
+
+        <form id="registrationForm" method="POST"
+              action="process_user_registration.php" novalidate>
+
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name"
+                       autocomplete="name" required
+                       aria-describedby="name-error">
+                <small id="name-error" class="error-message" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email"
+                       placeholder="example@email.com"
+                       autocomplete="email" required
+                       aria-describedby="email-error">
+                <small id="email-error" class="error-message" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password *</label>
+                <input type="password" id="password" name="password"
+                       placeholder="Create a strong password"
+                       autocomplete="new-password" required minlength="8"
+                       aria-describedby="password-help password-error">
+
+                <div class="password-meter" aria-label="Password strength">
+                    <div id="password-meter-bar" class="password-meter-bar"></div>
+                </div>
+
+                <small id="password-help" class="password-help">
+                    Use at least 8 characters with uppercase, lowercase, number and special character.
+                </small>
+                <small id="password-error" class="error-message" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password *</label>
+                <input type="password" id="confirm-password"
+                       name="confirm_password"
+                       placeholder="Re-enter your password"
+                       autocomplete="new-password" required
+                       aria-describedby="confirm-password-error">
+                <small id="confirm-password-error" class="error-message" aria-live="polite"></small>
+            </div>
+
+            <button type="submit">Create Account</button>
+        </form>
+    </section>
+
+    <p>
+        Already have an account?
+        <a href="login.html">Login here</a>
+    </p>
+
+    <p>
+        <a href="../index.html">Back to Home</a>
+    </p>
+
+    <footer>
+        <p>&copy; 2026 Student-Hub. Secure student account registration.</p>
+    </footer>
+</main>
+
+<script>
+const form = document.getElementById("registrationForm");
+const nameField = document.getElementById("name");
+const emailField = document.getElementById("email");
+const passwordField = document.getElementById("password");
+const confirmPasswordField = document.getElementById("confirm-password");
+const passwordBar = document.getElementById("password-meter-bar");
+
+const namePattern = /^[A-Za-z ]{2,50}$/;
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$/;
+
+function setError(field, message) {
+    const error = document.getElementById(field.id + "-error");
+    if (error) error.textContent = message;
+    field.classList.add("input-error");
+    field.classList.remove("input-valid");
+    field.setAttribute("aria-invalid", "true");
+}
+
+function setValid(field) {
+    const error = document.getElementById(field.id + "-error");
+    if (error) error.textContent = "";
+    field.classList.remove("input-error");
+    field.classList.add("input-valid");
+    field.setAttribute("aria-invalid", "false");
+}
+
+function validateName() {
+    if (!namePattern.test(nameField.value.trim())) {
+        setError(nameField, "Enter a valid name using letters and spaces only.");
+        return false;
+    }
+    setValid(nameField);
+    return true;
+}
+
+function validateEmail() {
+    if (!emailPattern.test(emailField.value.trim())) {
+        setError(emailField, "Enter a valid email address.");
+        return false;
+    }
+    setValid(emailField);
+    return true;
+}
+
+function validatePassword() {
+    if (!passwordPattern.test(passwordField.value)) {
+        setError(passwordField,
+            "Password must contain 8+ characters, uppercase, lowercase, number and special character.");
+        return false;
+    }
+    setValid(passwordField);
+    return true;
+}
+
+function validateConfirmPassword() {
+    if (confirmPasswordField.value === "" ||
+        confirmPasswordField.value !== passwordField.value) {
+        setError(confirmPasswordField, "Passwords do not match.");
+        return false;
+    }
+    setValid(confirmPasswordField);
+    return true;
+}
+
+function updatePasswordMeter() {
+    let score = 0;
+    if (passwordField.value.length >= 8) score++;
+    if (/[a-z]/.test(passwordField.value)) score++;
+    if (/[A-Z]/.test(passwordField.value)) score++;
+    if (/\d/.test(passwordField.value)) score++;
+    if (/[^A-Za-z0-9]/.test(passwordField.value)) score++;
+    passwordBar.style.width = (score * 20) + "%";
+}
+
+nameField.addEventListener("input", validateName);
+emailField.addEventListener("input", validateEmail);
+
+passwordField.addEventListener("input", function () {
+    updatePasswordMeter();
+    if (passwordField.value !== "") validatePassword();
+    if (confirmPasswordField.value !== "") validateConfirmPassword();
+});
+
+confirmPasswordField.addEventListener("input", validateConfirmPassword);
+
+form.addEventListener("submit", function (event) {
+    const valid = [
+        validateName(),
+        validateEmail(),
+        validatePassword(),
+        validateConfirmPassword()
+    ].every(Boolean);
+
+    if (!valid) {
+        event.preventDefault();
+        const firstError = form.querySelector(".input-error");
+        if (firstError) firstError.focus();
+    }
+});
+</script>
+
+</body>
+</html>

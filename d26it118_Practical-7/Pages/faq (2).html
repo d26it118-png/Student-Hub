@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Hub - FAQ</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="students.html">Students</a>
+        <a href="profile.html">Profile</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <h1>Frequently Asked Questions</h1>
+
+        <p class="intro-text">
+            FAQs are fetched from faqs.json and rendered dynamically.
+        </p>
+
+        <!-- Search -->
+        <div class="data-controls">
+
+            <input id="faqSearch" type="search" placeholder="Search FAQs...">
+
+        </div>
+
+        <!-- FAQ Container -->
+        <section id="faqContainer" class="faq-list" aria-live="polite">
+            Loading FAQs...
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                &copy; 2026 Student-Hub.
+                Helping students stay connected.
+            </p>
+        </footer>
+
+    </main>
+
+    <!-- JavaScript Module -->
+    <script type="module" src="../js/faqs.js"></script>
+
+</body>
+
+</html>
